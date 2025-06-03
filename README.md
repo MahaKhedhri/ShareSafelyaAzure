@@ -2,7 +2,6 @@
 
 **ShareSafely** is a secure file-sharing web application built with Python and Flask, designed to offer short-lived, secure access to uploaded files. Users can upload files, which are then stored in **Azure Blob Storage**. For every upload, the app generates a unique, **time-limited download link (15 seconds)**. After the time expires, the link becomes invalid — ensuring strong protection for sensitive files.
 
----
 
 ## 🚀 Features
 
@@ -11,8 +10,7 @@
 - 🧼 **Automatic Cleanup**: Expired files or links can be cleaned using Azure Functions.
 - 👁️ **Monitoring**: Application health and performance are tracked using Azure Monitor.
 - 🔐 **Secret Management**: All sensitive keys and secrets are stored securely in Azure Key Vault.
-
----
+  
 
 ## 🛠️ Technologies Used
 
@@ -25,7 +23,6 @@
 | **Azure Monitor**   | Logging, metrics, and alerting       |
 | **Azure Functions** | Automation (e.g., cleanup tasks)     |
 
----
 
 ## 📁 How It Works
 
@@ -35,15 +32,13 @@
 4. After 15 seconds, the link becomes invalid, preventing unauthorized access.
 5. Optionally, old files can be cleaned up with an automated Azure Function.
 
----
 
-🔐 Security Considerations
+## 🔐 Security Considerations
 All file access is token-based and temporary.
 Secrets and keys are never stored in code — they are retrieved from Azure Key Vault.
 HTTPS enforced via Azure Web Apps.
 Expired tokens prevent link reuse or file leaks.
 
----
 
 ## 🚀 How to Use
 
@@ -51,21 +46,17 @@ Expired tokens prevent link reuse or file leaks.
    ```bash
       https://github.com/MahaKhedhri/ShareSafelyaAzure.git
 
----
 
 ## 📖 Documentation and Setup Instructions
 
 For detailed setup, deployment, and usage steps, please refer to the [`Presentation.docs`](./Presentation.docs) file included in this repository.
 
----
 
-##📸 Screenshots
+## 📸 Screenshots
 ![Web App](https://imgur.com/0usJFQh.jpg)
 ![Storage Acc](https://imgur.com/C8Vp8eW.jpg)
 
 
----
-
-✍️ Author
+## ✍️ Author
 Maha Khedhri 
 Big Data and Web Development Student
